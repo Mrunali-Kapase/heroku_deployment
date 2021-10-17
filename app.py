@@ -22,4 +22,5 @@ def cnt():
     word_cnt = len(cln_data)
     return render_template('home.html', word_count = f"Number of words in given text: {word_cnt}")
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
