@@ -1,0 +1,18 @@
+<html>
+    <head>
+        
+        
+    </head>
+    <body style="background-color:rgb(245, 179, 149); font-family:courier; ">
+        <h1 style="text-align:center; background-color:rgba(240, 107, 84, 0.993); font-family:courier; font-size:300%;"><b> Count tool</b></h1>
+        <h3 style="text-align:center; color:rgba(30, 143, 255, 0.541); font-family:courier; font-size:150%;"><b> Welcome to the count tool</b></h3>
+        <label for="txt"><b>Enter your text here:</b> </label><br><br>
+        <form action="/count" method='POST'>
+        <input type="text" name='txt' id='txt' required='required' ><br><br>
+        <button type="submit">Count</button>
+        </form>
+        <br><br>
+        {{ word_count }}
+
+    </body>
+</html>
