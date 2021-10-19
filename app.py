@@ -14,7 +14,7 @@ app = Flask(__name__)
 def wrd_cnt():
     return render_template('home.html')
 
-@app.route('/count', methods=['post'])
+@app.route('/count', methods=['POST'])
 def cnt():
     text_in = request.form.get('txt')
     print(text_in)
